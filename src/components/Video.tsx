@@ -45,8 +45,9 @@ export function Video(props: VideoProps) {
 
   if (!data) {
     return (
-      <div className="flex-1">
-        <p>Carregando...</p>
+      <div className="flex flex-1 items-center justify-center">
+        <div className="animate-spin ease-linear w-20 h-20 border-4 border-l-green-300 border-r-green-300 border-b-green-300 border-t-green-700 rounded-full">
+        </div>
       </div>
     )
   }
